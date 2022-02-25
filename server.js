@@ -17,6 +17,12 @@ io.on('connection', socket =>{
         console.log(payload)
         io.emit('logou', payload)
     })
+    
+    socket.on('teste', payload=>{
+        console.log(payload)
+        io.emit('teste', payload)
+    })
+
 
 
 
