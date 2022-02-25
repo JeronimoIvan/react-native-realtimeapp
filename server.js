@@ -28,6 +28,9 @@ io.on('disconnect', socket => {
     console.log('Disconectou')
 })
 
+app.get("/", function(req, res){
+    res.send("ola mundo");
+})
 
 server.listen(PORT, ()=>{
     console.log("Escutando na porta: "+PORT)
