@@ -9,10 +9,7 @@ const io = require('socket.io')(server, {
 const PORT = process.env.PORT || 3000;
 
 io.on('connection', socket =>{
-    console.log('conneccao bem sucedida')
-    io.emit('logou', 'jeronimo')
-
-
+ 
     socket.on('logou', payload=>{
         console.log(payload)
         io.emit('logou', payload)
